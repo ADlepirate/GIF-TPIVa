@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIF Viewer</title>
+    <style>
+        /* Create a container for the GIFs */
+        .gif-container {
+            display: flex;
+            justify-content: space-between;  /* Optional: Space them out */
+        }
+
+        /* Make each image take 50% of the screen width */
+        .gif-container img {
+            width: 50%;   /* 50% of the screen width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Style for the caption */
+        .caption {
+            text-align: center; /* Center the caption */
+            font-size: 16px; /* Font size for the caption */
+            color: #555; /* Light grey color */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GIF Page!</h1>
-    <p>Here is the GIF I wanted to share:</p>
+    <h1>Welcome to my N-body simulation GIF Page!</h1>
+    <p>2'097'152 particles each with a mass of 1.3 trillion solar masses:</p>
     
-    <!-- Display the GIF -->
-    <img src="https://github.com/ADlepirate/GIF-TPIVa/raw/main/7Gadget_600_30000_70000.gif" alt="An awesome GIF" style="width:300px; height:auto;">
+    <!-- Create a container to hold both GIFs side by side -->
+    <div class="gif-container">
+        <!-- Display the first GIF, 50% of the screen width -->
+        <img src="https://github.com/ADlepirate/GIF-TPIVa/raw/main/7Gadget_600_30000_70000.gif" alt="An awesome GIF">
+        
+        <!-- Display the second GIF (add the URL later) -->
+        <img src="" alt="An awesome GIF">
+    </div>
+    
+    <!-- Caption for the second GIF -->
+    <p class="caption">Here's a zoom-in view.</p>
 
-    <!-- Provide a direct link to the GIF -->
-    <p>If you want to view the GIF directly, <a href="https://github.com/ADlepirate/GIF-TPIVa/raw/main/7Gadget_600_30000_70000.gif" target="_blank">click here</a>.</p>
+    <!-- Provide a direct link to the first GIF -->
+    <p>If you want to download the GIF directly, <a href="https://github.com/ADlepirate/GIF-TPIVa/raw/main/7Gadget_600_30000_70000.gif" target="_blank">click here</a>.</p>
 </body>
 </html>
